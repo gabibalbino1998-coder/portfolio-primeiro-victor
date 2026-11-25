@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Poppins:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    background: #080b14;
+    padding: 40px 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 50px;
+    color: #00eaff;
+    text-shadow: 0 0 20px #00eaff;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #9da7bd;
+    font-size: 16px;
+}
+
+.container {
+    width: 100%;
+    max-width: 850px;
+    margin: auto;
+    padding: 40px;
+    background: #101522;
+    border: 1px solid #1d2a40;
+    border-radius: 20px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+}
+
+.foto {
+    display: block;
+    width: 230px;
+    height: 230px;
+    object-fit: cover;
+    margin: 0 auto 40px;
+    border-radius: 50%;
+    border: 4px solid #00eaff;
+    box-shadow: 0 0 30px rgba(0, 234, 255, 0.4);
+    transition: 0.3s;
+}
+
+.foto:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 45px rgba(0, 234, 255, 0.7);
+}
+
+section {
+    margin-bottom: 30px;
+    padding: 25px;
+    background: #0b101c;
+    border-radius: 15px;
+    border-left: 3px solid #00eaff;
+}
+
+h2 {
+    font-family: 'Orbitron', sans-serif;
+    color: #00eaff;
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+
+p {
+    color: #c5ccda;
+    line-height: 1.8;
+}
+
+ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+li {
+    padding: 13px 15px;
+    background: #151d2c;
+    border-radius: 10px;
+    color: #dce3ef;
+    transition: 0.3s;
+}
+
+li:hover {
+    background: #1b293d;
+    color: #00eaff;
+    transform: translateX(5px);
+}
+
+.botao {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 24px;
+    color: #080b14;
+    background: #00eaff;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background: #fff;
+    box-shadow: 0 0 25px rgba(0, 234, 255, 0.6);
+    transform: translateY(-3px);
+}
+
+a {
+    color: #00eaff;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    color: #687386;
+    font-size: 14px;
+}
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 20px 10px;
+    }
+
+    header h1 {
+        font-size: 35px;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    .foto {
+        width: 180px;
+        height: 180px;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    ul {
+        grid-template-columns: 1fr;
+    }
+}
